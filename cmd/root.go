@@ -2,15 +2,17 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/spf13/cobra"
 	"os"
+
+	"github.com/spf13/cobra"
 )
 
-var rootCmd = &cobra.Command{Use:"app"}
+var rootCmd = &cobra.Command{Use: "app"}
 
 func init() {
 	rootCmd.AddCommand(setCmd)
 	rootCmd.AddCommand(addCmd)
+	rootCmd.AddCommand(listCmd)
 }
 
 func Execute() {
