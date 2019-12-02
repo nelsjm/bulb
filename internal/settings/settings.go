@@ -62,7 +62,7 @@ func setSettings(settings map[string]string) error {
 		return err
 	}
 
-	f, err := os.Open("settings.json")
+	f, err := os.Create("settings.json")
 	if err != nil {
 		return err
 	}

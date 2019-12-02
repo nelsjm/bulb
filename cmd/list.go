@@ -11,7 +11,7 @@ import (
 var listCmd = &cobra.Command{
 	Use:   "list",
 	Short: "Lists all of the available commands",
-	Long:  "Lists all of the available commads from the settings",
+	Long:  "Lists all of the available commands from the settings",
 	Run:   listRun,
 }
 
